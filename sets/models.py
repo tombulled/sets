@@ -29,6 +29,16 @@ class Sets(BaseModel):
     def __bool__(self):
         return self.all()
 
+    @classmethod
+    def from_model(cls, model):
+        return cls.parse_obj \
+        (
+            {
+                key: {value} if value is not None else set()
+                for key, value in model
+            }
+        )
+
     def keys(self):
         return self.dict().keys()
 
