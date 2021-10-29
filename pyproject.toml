@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "sets"
 version = "0.1.0"
-description = "Python library to store and manage a collection of sets"
+description = "Store and manage a collection of sets"
 authors = ["Tom Bulled <26026015+tombulled@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
